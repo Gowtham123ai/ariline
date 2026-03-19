@@ -129,5 +129,24 @@ def ai_chat():
     else: res = "I am your Airline AI. How can I help?"
     return jsonify({"response": res})
 
+@app.route("/api/save-route", methods=["POST"])
+def save_route():
+    user_email = session.get("user", {}).get("email", "admin@airline.ai")
+    data = request.json
+    db.routes.insert_one({
+        "user": user_email,
+        "origin": data["origin"],
+        "destination": data["destination"],
+        "price": data.get("price"),
+        "timestamp": datetime.datetime.now()
+    })
+    return jsonify({"msg": "Route saved"})
+
+@app.route("/api/my-routes")
+def my_routes():
+    user_email = session.get("user", {}).get("email", "admin@airline.ai")
+    routes = list(db.routes.find({"user": user_email}, {"_id":0}))
+    return jsonify(routes)
+
 # Vercel requirement: Export the app object
 # No socketio.run() here as Vercel handles the server
