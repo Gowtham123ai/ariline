@@ -1,0 +1,20 @@
+
+CLOUD DEPLOYMENT GUIDE
+
+Backend:
+- Platform: Render / Railway / AWS EC2
+- Steps:
+  1. Upload Flask app
+  2. Add requirements.txt
+  3. Set start command: python app.py
+
+Frontend:
+- Platform: Vercel / Netlify
+- Steps:
+  1. Build React app
+  2. Deploy dist folder
+
+Advantages:
+- Public URL
+- Scalable
+- Production ready

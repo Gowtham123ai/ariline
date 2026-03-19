@@ -1,0 +1,371 @@
+time,IndiGo_price,IndiGo_delay,IndiGo_delay_status,Air India_price,Air India_delay,Air India_delay_status,SpiceJet_price,SpiceJet_delay,SpiceJet_delay_status
+13:36:34,5572,71,Major Delay,5154,42,Major Delay,4812,40,Major Delay
+13:36:39,4958,49,Major Delay,6328,31,Major Delay,6034,84,Major Delay
+13:36:39,5126,23,Minor Delay,4701,0,On Time,5236,75,Major Delay
+13:36:44,4588,5,On Time,4440,62,Major Delay,4907,76,Major Delay
+13:36:47,6409,0,On Time,4996,48,Major Delay,4304,79,Major Delay
+13:36:47,6372,34,Major Delay,6125,32,Major Delay,5966,46,Major Delay
+13:36:53,5500,48,Major Delay,5319,14,Minor Delay,5946,39,Major Delay
+13:36:58,6317,4,On Time,6004,84,Major Delay,5952,73,Major Delay
+13:37:03,5000,82,Major Delay,6194,83,Major Delay,5205,55,Major Delay
+13:37:07,5277,1,On Time,4309,76,Major Delay,6399,9,On Time
+13:37:07,6495,81,Major Delay,5547,0,On Time,4974,34,Major Delay
+13:37:13,5902,24,Minor Delay,5975,82,Major Delay,6143,33,Major Delay
+13:37:18,6319,26,Minor Delay,5015,47,Major Delay,6348,16,Minor Delay
+13:37:23,4668,60,Major Delay,5156,13,Minor Delay,5159,26,Minor Delay
+13:37:28,6316,50,Major Delay,4881,57,Major Delay,6117,7,On Time
+13:37:33,5215,87,Major Delay,6135,48,Major Delay,5584,58,Major Delay
+13:37:38,6186,62,Major Delay,6131,57,Major Delay,4887,60,Major Delay
+13:37:43,6239,9,On Time,6064,17,Minor Delay,6379,50,Major Delay
+13:37:48,5114,1,On Time,4890,28,Minor Delay,4333,4,On Time
+13:37:49,5916,4,On Time,4955,29,Minor Delay,4426,80,Major Delay
+13:37:49,5801,69,Major Delay,4398,65,Major Delay,5479,37,Major Delay
+13:37:55,4569,64,Major Delay,4512,40,Major Delay,6034,39,Major Delay
+13:38:00,6487,5,On Time,4997,49,Major Delay,5213,65,Major Delay
+13:38:00,5715,61,Major Delay,5718,34,Major Delay,4532,56,Major Delay
+13:38:00,6198,88,Major Delay,5775,5,On Time,6215,43,Major Delay
+13:38:05,5942,0,On Time,4843,78,Major Delay,6434,46,Major Delay
+13:38:10,5753,73,Major Delay,6487,46,Major Delay,4462,81,Major Delay
+13:38:15,5525,67,Major Delay,6078,3,On Time,4804,53,Major Delay
+13:38:20,6159,53,Major Delay,4822,56,Major Delay,6218,76,Major Delay
+13:38:26,5093,4,On Time,5346,35,Major Delay,6241,55,Major Delay
+13:38:31,6021,41,Major Delay,5619,60,Major Delay,4358,21,Minor Delay
+13:38:36,5039,59,Major Delay,5895,6,On Time,5550,16,Minor Delay
+13:38:41,5350,88,Major Delay,5436,50,Major Delay,4707,49,Major Delay
+13:38:46,4317,38,Major Delay,5821,16,Minor Delay,4825,58,Major Delay
+13:38:51,5161,88,Major Delay,5745,2,On Time,5292,6,On Time
+13:38:56,6354,5,On Time,4671,58,Major Delay,5415,83,Major Delay
+13:39:01,4628,25,Minor Delay,5388,85,Major Delay,4579,11,Minor Delay
+13:39:05,5775,61,Major Delay,5670,55,Major Delay,6191,70,Major Delay
+13:39:10,5982,8,On Time,5736,33,Major Delay,4711,77,Major Delay
+13:39:16,5179,48,Major Delay,4358,37,Major Delay,5028,16,Minor Delay
+13:39:21,6131,19,Minor Delay,5036,4,On Time,5273,19,Minor Delay
+13:39:26,6476,45,Major Delay,4973,41,Major Delay,6428,0,On Time
+13:39:31,6210,2,On Time,6053,61,Major Delay,5402,21,Minor Delay
+13:39:36,5016,70,Major Delay,6068,33,Major Delay,4311,26,Minor Delay
+13:39:41,5402,80,Major Delay,5040,8,On Time,4381,81,Major Delay
+13:39:46,4869,5,On Time,5057,6,On Time,5497,35,Major Delay
+13:39:51,4839,35,Major Delay,5141,27,Minor Delay,4350,46,Major Delay
+13:39:56,5586,51,Major Delay,5883,20,Minor Delay,6205,9,On Time
+13:40:01,4524,32,Major Delay,4743,66,Major Delay,5988,73,Major Delay
+13:40:06,5488,69,Major Delay,5474,31,Major Delay,5661,12,Minor Delay
+13:40:11,5165,52,Major Delay,4417,80,Major Delay,5050,82,Major Delay
+13:40:16,5667,18,Minor Delay,4438,73,Major Delay,6300,22,Minor Delay
+13:40:21,6262,57,Major Delay,4438,66,Major Delay,5844,22,Minor Delay
+13:40:26,5712,67,Major Delay,4345,54,Major Delay,4861,18,Minor Delay
+13:40:31,5575,82,Major Delay,4566,41,Major Delay,5408,7,On Time
+13:40:36,5093,54,Major Delay,6003,90,Major Delay,6401,40,Major Delay
+13:40:41,5837,31,Major Delay,5959,51,Major Delay,4546,5,On Time
+13:40:46,5287,12,Minor Delay,6186,34,Major Delay,5685,78,Major Delay
+13:40:51,4581,38,Major Delay,6115,80,Major Delay,4924,30,Minor Delay
+13:40:56,5553,78,Major Delay,5363,80,Major Delay,5423,46,Major Delay
+13:41:01,5194,79,Major Delay,6217,5,On Time,5324,19,Minor Delay
+13:41:01,4880,55,Major Delay,6494,63,Major Delay,6176,26,Minor Delay
+13:41:01,4447,71,Major Delay,5495,5,On Time,4391,65,Major Delay
+13:41:06,4455,88,Major Delay,5030,57,Major Delay,4869,27,Minor Delay
+13:41:12,4782,82,Major Delay,6437,35,Major Delay,4693,43,Major Delay
+13:41:17,5021,36,Major Delay,5837,79,Major Delay,4749,24,Minor Delay
+13:41:22,4678,30,Minor Delay,6087,56,Major Delay,5484,9,On Time
+13:41:27,6378,50,Major Delay,5460,88,Major Delay,4574,13,Minor Delay
+13:41:32,5206,16,Minor Delay,5146,73,Major Delay,5393,51,Major Delay
+13:41:37,5003,87,Major Delay,6115,64,Major Delay,4539,22,Minor Delay
+13:41:42,4624,3,On Time,4703,4,On Time,4511,39,Major Delay
+13:41:47,4844,66,Major Delay,4984,57,Major Delay,6182,63,Major Delay
+13:41:52,4776,5,On Time,4678,25,Minor Delay,4864,87,Major Delay
+13:41:57,4626,13,Minor Delay,5771,28,Minor Delay,5531,54,Major Delay
+13:42:02,5365,4,On Time,5853,18,Minor Delay,6400,66,Major Delay
+13:42:07,6168,26,Minor Delay,4767,73,Major Delay,5433,41,Major Delay
+13:42:36,5183,15,Minor Delay,4724,4,On Time,4330,18,Minor Delay
+13:43:36,4744,89,Major Delay,5126,29,Minor Delay,4774,5,On Time
+13:44:36,5305,89,Major Delay,5047,8,On Time,4777,31,Major Delay
+13:45:36,6187,47,Major Delay,4325,69,Major Delay,5072,37,Major Delay
+13:46:36,5326,37,Major Delay,5128,80,Major Delay,4452,84,Major Delay
+13:47:36,6405,17,Minor Delay,5302,55,Major Delay,6047,60,Major Delay
+13:48:36,5170,60,Major Delay,5189,79,Major Delay,5695,53,Major Delay
+13:49:36,4329,25,Minor Delay,5125,26,Minor Delay,5269,48,Major Delay
+13:50:36,6185,52,Major Delay,6075,87,Major Delay,6484,62,Major Delay
+13:51:36,4373,64,Major Delay,5735,50,Major Delay,5997,8,On Time
+13:52:36,5961,30,Minor Delay,5396,66,Major Delay,5476,78,Major Delay
+13:53:36,6101,80,Major Delay,4374,23,Minor Delay,5521,32,Major Delay
+13:54:36,6358,32,Major Delay,6213,73,Major Delay,4954,48,Major Delay
+13:55:36,4732,1,On Time,5634,25,Minor Delay,6241,63,Major Delay
+13:56:36,4658,31,Major Delay,4943,16,Minor Delay,5000,76,Major Delay
+13:57:36,5325,15,Minor Delay,6394,34,Major Delay,5722,49,Major Delay
+13:58:36,4617,61,Major Delay,4375,87,Major Delay,4795,69,Major Delay
+13:59:36,5828,0,On Time,5326,83,Major Delay,4695,3,On Time
+14:00:36,6308,49,Major Delay,6194,19,Minor Delay,4528,20,Minor Delay
+14:01:36,4877,59,Major Delay,5439,84,Major Delay,6171,27,Minor Delay
+14:02:36,4384,9,On Time,5792,3,On Time,6148,35,Major Delay
+14:03:36,5794,76,Major Delay,5176,21,Minor Delay,5580,67,Major Delay
+14:04:36,5386,44,Major Delay,5833,90,Major Delay,4631,13,Minor Delay
+14:05:36,4667,36,Major Delay,4365,32,Major Delay,5104,79,Major Delay
+14:06:36,5014,15,Minor Delay,4882,76,Major Delay,6175,81,Major Delay
+14:07:36,4758,81,Major Delay,5581,57,Major Delay,5500,52,Major Delay
+14:08:36,5360,59,Major Delay,4329,5,On Time,5263,69,Major Delay
+14:09:36,4487,87,Major Delay,6012,80,Major Delay,5162,63,Major Delay
+14:10:36,5727,21,Minor Delay,5736,9,On Time,5680,52,Major Delay
+14:11:36,5475,61,Major Delay,5643,23,Minor Delay,5227,18,Minor Delay
+14:12:36,5940,25,Minor Delay,4885,68,Major Delay,5976,47,Major Delay
+14:13:36,5018,11,Minor Delay,5369,56,Major Delay,5707,0,On Time
+14:14:36,4374,45,Major Delay,4760,31,Major Delay,6101,66,Major Delay
+14:15:36,6094,67,Major Delay,5227,2,On Time,4674,90,Major Delay
+14:16:36,4901,76,Major Delay,4782,58,Major Delay,4918,32,Major Delay
+14:17:36,4910,90,Major Delay,4647,87,Major Delay,5391,89,Major Delay
+14:18:36,6304,43,Major Delay,5094,47,Major Delay,4810,7,On Time
+14:19:36,5099,2,On Time,5513,77,Major Delay,5543,66,Major Delay
+14:20:36,4389,22,Minor Delay,4383,8,On Time,4670,20,Minor Delay
+14:21:18,4422,71,Major Delay,6385,45,Major Delay,6308,36,Major Delay
+14:21:22,4547,42,Major Delay,5612,11,Minor Delay,5276,79,Major Delay
+14:21:27,4333,29,Minor Delay,5844,23,Minor Delay,5348,42,Major Delay
+14:21:32,4362,66,Major Delay,4805,35,Major Delay,6288,64,Major Delay
+14:21:37,5435,34,Major Delay,4523,81,Major Delay,5609,44,Major Delay
+14:21:42,6213,20,Minor Delay,5983,40,Major Delay,5375,24,Minor Delay
+14:21:47,6434,80,Major Delay,6062,57,Major Delay,4505,82,Major Delay
+14:21:52,4682,35,Major Delay,5424,86,Major Delay,4982,40,Major Delay
+14:21:57,4341,14,Minor Delay,4343,80,Major Delay,6417,64,Major Delay
+14:22:02,5345,48,Major Delay,4918,77,Major Delay,5844,56,Major Delay
+14:22:07,5948,64,Major Delay,4935,21,Minor Delay,4986,13,Minor Delay
+14:22:12,5671,9,On Time,4811,57,Major Delay,5183,67,Major Delay
+14:22:17,4423,76,Major Delay,5936,49,Major Delay,5921,33,Major Delay
+14:22:36,5312,35,Major Delay,6256,58,Major Delay,6326,56,Major Delay
+14:22:52,4786,50,Major Delay,5205,40,Major Delay,4547,81,Major Delay
+14:22:53,4770,15,Minor Delay,5369,40,Major Delay,5671,44,Major Delay
+14:22:53,5009,30,Minor Delay,5779,64,Major Delay,5808,68,Major Delay
+14:22:58,6009,61,Major Delay,4499,1,On Time,4917,50,Major Delay
+14:23:03,5168,88,Major Delay,5200,27,Minor Delay,6341,23,Minor Delay
+14:23:08,6487,33,Major Delay,5734,20,Minor Delay,4768,34,Major Delay
+14:23:14,5857,72,Major Delay,6206,47,Major Delay,5767,2,On Time
+14:23:19,5108,10,On Time,6249,51,Major Delay,5388,69,Major Delay
+14:23:24,5558,37,Major Delay,4837,55,Major Delay,5480,50,Major Delay
+14:23:29,6194,8,On Time,6434,24,Minor Delay,4807,40,Major Delay
+14:23:34,5220,14,Minor Delay,6349,3,On Time,4682,42,Major Delay
+14:23:39,5617,31,Major Delay,5613,25,Minor Delay,5936,83,Major Delay
+14:23:44,5809,21,Minor Delay,5713,26,Minor Delay,5278,16,Minor Delay
+14:23:49,6312,46,Major Delay,5311,36,Major Delay,5508,64,Major Delay
+14:23:53,5654,75,Major Delay,4436,81,Major Delay,5991,37,Major Delay
+14:23:53,4818,11,Minor Delay,4501,6,On Time,6351,52,Major Delay
+14:23:58,6174,53,Major Delay,6459,55,Major Delay,5394,73,Major Delay
+14:23:58,6490,29,Minor Delay,5364,84,Major Delay,6159,25,Minor Delay
+14:23:58,6033,10,On Time,5817,53,Major Delay,5386,54,Major Delay
+14:24:03,6203,68,Major Delay,6478,53,Major Delay,5438,13,Minor Delay
+14:24:05,5300,19,Minor Delay,5246,67,Major Delay,4695,34,Major Delay
+14:24:05,4644,41,Major Delay,5727,72,Major Delay,5962,64,Major Delay
+14:24:11,5435,54,Major Delay,4303,31,Major Delay,4878,26,Minor Delay
+14:24:16,5641,84,Major Delay,4845,52,Major Delay,5714,59,Major Delay
+14:24:20,5398,64,Major Delay,4725,65,Major Delay,4476,67,Major Delay
+14:24:25,6063,82,Major Delay,6232,3,On Time,5371,47,Major Delay
+14:24:30,6312,5,On Time,5736,58,Major Delay,5143,89,Major Delay
+14:24:30,5748,13,Minor Delay,5207,31,Major Delay,6288,39,Major Delay
+14:24:30,4850,75,Major Delay,6465,15,Minor Delay,5827,17,Minor Delay
+14:24:34,5543,32,Major Delay,5330,13,Minor Delay,4919,50,Major Delay
+14:24:34,5942,56,Major Delay,5397,59,Major Delay,4784,86,Major Delay
+14:24:39,4890,45,Major Delay,5134,59,Major Delay,5905,48,Major Delay
+14:24:45,4454,15,Minor Delay,5997,15,Minor Delay,6331,85,Major Delay
+14:24:50,5025,75,Major Delay,6173,54,Major Delay,5831,4,On Time
+14:24:55,4706,0,On Time,4734,41,Major Delay,4336,42,Major Delay
+14:25:00,5705,19,Minor Delay,5145,19,Minor Delay,5247,61,Major Delay
+14:25:05,6281,44,Major Delay,4694,79,Major Delay,4835,5,On Time
+14:25:10,4349,13,Minor Delay,4989,89,Major Delay,4435,76,Major Delay
+14:25:15,5286,36,Major Delay,4747,74,Major Delay,5449,20,Minor Delay
+14:25:20,5500,84,Major Delay,5321,69,Major Delay,5665,77,Major Delay
+14:25:25,6209,17,Minor Delay,5881,54,Major Delay,6146,64,Major Delay
+14:25:30,5744,73,Major Delay,5105,72,Major Delay,4522,53,Major Delay
+14:25:35,6329,61,Major Delay,4609,21,Minor Delay,5794,76,Major Delay
+14:25:40,5651,1,On Time,6354,21,Minor Delay,4489,39,Major Delay
+14:26:28,4367,43,Major Delay,6365,24,Minor Delay,6212,37,Major Delay
+14:26:30,4585,75,Major Delay,4858,0,On Time,4979,88,Major Delay
+14:26:35,6342,21,Minor Delay,4463,11,Minor Delay,4774,74,Major Delay
+14:26:40,4819,68,Major Delay,4740,53,Major Delay,5119,31,Major Delay
+14:26:45,4830,71,Major Delay,6365,60,Major Delay,5470,5,On Time
+14:26:49,5000,23,Minor Delay,5577,4,On Time,5928,87,Major Delay
+14:26:55,5324,9,On Time,6103,53,Major Delay,4493,40,Major Delay
+14:27:00,5869,50,Major Delay,5680,9,On Time,4400,44,Major Delay
+14:27:05,4576,82,Major Delay,5955,5,On Time,4730,71,Major Delay
+14:27:10,5389,53,Major Delay,5079,62,Major Delay,4855,86,Major Delay
+14:27:15,4307,54,Major Delay,4983,11,Minor Delay,6450,22,Minor Delay
+14:27:20,6392,30,Minor Delay,4317,30,Minor Delay,5309,42,Major Delay
+14:27:25,4931,3,On Time,5409,89,Major Delay,6378,46,Major Delay
+14:27:30,4679,71,Major Delay,4559,27,Minor Delay,6274,60,Major Delay
+14:27:35,4594,61,Major Delay,6025,87,Major Delay,5423,22,Minor Delay
+14:27:40,4797,35,Major Delay,5663,58,Major Delay,6393,65,Major Delay
+14:27:45,4595,53,Major Delay,4565,15,Minor Delay,6112,57,Major Delay
+14:27:49,5233,10,On Time,6370,17,Minor Delay,5812,69,Major Delay
+14:27:55,4967,2,On Time,5668,46,Major Delay,5773,32,Major Delay
+14:28:00,6199,53,Major Delay,5927,26,Minor Delay,5032,61,Major Delay
+14:28:05,4933,39,Major Delay,5273,40,Major Delay,5706,20,Minor Delay
+14:28:10,6387,33,Major Delay,4972,3,On Time,5624,32,Major Delay
+10:58:19,5048,13,Minor Delay,5422,62,Major Delay,4944,6,On Time
+10:58:24,4750,34,Major Delay,6194,2,On Time,4435,63,Major Delay
+10:58:29,5511,4,On Time,5701,32,Major Delay,6430,36,Major Delay
+10:58:34,5568,60,Major Delay,4792,6,On Time,4755,10,On Time
+10:58:39,4862,52,Major Delay,6392,84,Major Delay,5824,84,Major Delay
+10:58:44,5731,73,Major Delay,5651,69,Major Delay,6038,13,Minor Delay
+10:58:49,6042,70,Major Delay,5588,78,Major Delay,5870,46,Major Delay
+10:58:54,5560,70,Major Delay,5340,35,Major Delay,6252,78,Major Delay
+10:58:59,4842,37,Major Delay,5380,80,Major Delay,5823,8,On Time
+10:59:04,4353,87,Major Delay,5585,30,Minor Delay,5281,85,Major Delay
+10:59:09,4865,1,On Time,5440,53,Major Delay,5382,50,Major Delay
+10:59:14,6013,25,Minor Delay,5122,8,On Time,6433,85,Major Delay
+10:59:19,6012,75,Major Delay,5458,43,Major Delay,5246,67,Major Delay
+10:59:24,5456,5,On Time,6416,17,Minor Delay,5879,77,Major Delay
+10:59:29,4682,79,Major Delay,4933,22,Minor Delay,4962,75,Major Delay
+10:59:34,4491,88,Major Delay,4478,66,Major Delay,5900,56,Major Delay
+10:59:39,5199,85,Major Delay,6150,37,Major Delay,5220,83,Major Delay
+10:59:44,6295,90,Major Delay,6380,19,Minor Delay,6491,31,Major Delay
+10:59:49,6448,16,Minor Delay,4964,49,Major Delay,6329,75,Major Delay
+10:59:54,5035,78,Major Delay,5273,10,On Time,4809,26,Minor Delay
+10:59:59,4905,71,Major Delay,4391,9,On Time,4999,7,On Time
+11:00:04,4896,83,Major Delay,5353,64,Major Delay,5169,90,Major Delay
+11:00:09,4543,1,On Time,4849,46,Major Delay,5757,28,Minor Delay
+11:00:14,5621,33,Major Delay,5383,65,Major Delay,6107,28,Minor Delay
+11:00:19,4870,19,Minor Delay,5512,0,On Time,4716,11,Minor Delay
+11:00:24,5379,41,Major Delay,6243,52,Major Delay,5425,75,Major Delay
+11:00:29,5984,52,Major Delay,4706,14,Minor Delay,6340,78,Major Delay
+11:00:34,5360,68,Major Delay,6057,36,Major Delay,6064,55,Major Delay
+11:00:39,4628,16,Minor Delay,5635,9,On Time,6131,13,Minor Delay
+11:00:44,4815,56,Major Delay,5537,4,On Time,5668,30,Minor Delay
+11:00:49,4729,39,Major Delay,6454,39,Major Delay,5731,64,Major Delay
+11:00:54,5121,70,Major Delay,4569,59,Major Delay,5587,19,Minor Delay
+11:00:59,5986,22,Minor Delay,6361,37,Major Delay,5736,57,Major Delay
+11:01:04,5681,75,Major Delay,6463,41,Major Delay,5156,71,Major Delay
+11:01:09,4732,28,Minor Delay,4541,67,Major Delay,6082,62,Major Delay
+11:01:14,6049,53,Major Delay,4787,88,Major Delay,5332,15,Minor Delay
+11:01:19,5507,41,Major Delay,4640,82,Major Delay,4442,51,Major Delay
+11:01:24,6105,78,Major Delay,5692,49,Major Delay,4496,89,Major Delay
+11:01:29,6436,65,Major Delay,5735,69,Major Delay,5248,36,Major Delay
+11:02:01,4738,23,Minor Delay,5474,62,Major Delay,4356,0,On Time
+11:02:38,4534,60,Major Delay,6011,89,Major Delay,5181,71,Major Delay
+11:02:39,4882,43,Major Delay,5801,21,Minor Delay,6203,78,Major Delay
+11:02:44,6012,82,Major Delay,6115,44,Major Delay,4620,68,Major Delay
+11:02:49,4798,51,Major Delay,5176,28,Minor Delay,4354,3,On Time
+11:02:54,5712,50,Major Delay,4302,77,Major Delay,4349,73,Major Delay
+11:02:59,6484,64,Major Delay,4798,18,Minor Delay,5688,83,Major Delay
+11:03:04,4483,88,Major Delay,4773,8,On Time,5268,11,Minor Delay
+11:03:09,4835,19,Minor Delay,6037,54,Major Delay,5343,65,Major Delay
+11:03:14,4937,7,On Time,5128,78,Major Delay,6200,42,Major Delay
+11:03:19,5614,27,Minor Delay,6180,88,Major Delay,6317,88,Major Delay
+11:03:24,4903,27,Minor Delay,6244,62,Major Delay,5432,59,Major Delay
+11:03:29,5751,16,Minor Delay,4615,76,Major Delay,4331,49,Major Delay
+11:03:34,5957,21,Minor Delay,5608,30,Minor Delay,5790,25,Minor Delay
+11:03:39,5344,84,Major Delay,5153,26,Minor Delay,6156,82,Major Delay
+11:03:44,4713,65,Major Delay,6321,66,Major Delay,5838,29,Minor Delay
+11:03:49,5019,58,Major Delay,4805,30,Minor Delay,5188,34,Major Delay
+11:03:54,5092,35,Major Delay,5267,6,On Time,5910,23,Minor Delay
+11:03:59,5276,54,Major Delay,5612,39,Major Delay,5621,72,Major Delay
+11:04:04,6235,46,Major Delay,4395,53,Major Delay,4798,23,Minor Delay
+11:04:09,4358,31,Major Delay,4498,77,Major Delay,4639,32,Major Delay
+11:04:48,4377,25,Minor Delay,4337,88,Major Delay,6263,38,Major Delay
+11:04:49,4712,86,Major Delay,4516,66,Major Delay,5125,90,Major Delay
+11:04:54,5201,76,Major Delay,4515,9,On Time,4812,82,Major Delay
+11:04:59,6050,68,Major Delay,5149,58,Major Delay,5567,54,Major Delay
+11:05:04,5297,38,Major Delay,5342,35,Major Delay,5183,1,On Time
+11:05:09,5685,45,Major Delay,5844,89,Major Delay,5848,10,On Time
+11:05:14,6397,80,Major Delay,5396,65,Major Delay,4995,33,Major Delay
+11:05:19,5790,39,Major Delay,4924,14,Minor Delay,6314,85,Major Delay
+11:05:24,5827,42,Major Delay,5686,48,Major Delay,4754,54,Major Delay
+11:05:29,6245,70,Major Delay,6405,66,Major Delay,6059,83,Major Delay
+11:05:34,5661,50,Major Delay,6163,72,Major Delay,4488,44,Major Delay
+11:05:39,5745,66,Major Delay,6415,58,Major Delay,4574,84,Major Delay
+11:05:44,5157,81,Major Delay,6288,7,On Time,4938,39,Major Delay
+11:05:49,4389,73,Major Delay,4388,88,Major Delay,5620,11,Minor Delay
+11:05:54,4353,35,Major Delay,5576,64,Major Delay,4332,75,Major Delay
+11:05:59,5451,17,Minor Delay,4911,60,Major Delay,5884,79,Major Delay
+11:06:04,5376,7,On Time,4978,76,Major Delay,6157,58,Major Delay
+11:06:09,4931,11,Minor Delay,5987,35,Major Delay,5917,49,Major Delay
+11:07:01,6077,24,Minor Delay,6088,51,Major Delay,6067,39,Major Delay
+11:07:43,6175,86,Major Delay,5779,56,Major Delay,4911,0,On Time
+11:07:44,6033,82,Major Delay,6097,68,Major Delay,4516,12,Minor Delay
+11:07:49,4344,27,Minor Delay,4865,34,Major Delay,4475,41,Major Delay
+11:07:54,6253,68,Major Delay,4481,58,Major Delay,5785,49,Major Delay
+11:07:59,5892,61,Major Delay,4765,88,Major Delay,5266,6,On Time
+11:08:04,5154,4,On Time,4701,4,On Time,4454,78,Major Delay
+11:08:09,5022,82,Major Delay,4679,56,Major Delay,4550,50,Major Delay
+11:08:14,4978,35,Major Delay,6292,11,Minor Delay,5087,23,Minor Delay
+11:08:19,5996,61,Major Delay,6264,66,Major Delay,4885,41,Major Delay
+11:08:24,5256,45,Major Delay,4779,31,Major Delay,4706,65,Major Delay
+11:08:29,5440,30,Minor Delay,6051,19,Minor Delay,4607,6,On Time
+11:08:34,5344,31,Major Delay,5582,15,Minor Delay,5926,43,Major Delay
+11:08:39,6059,22,Minor Delay,5035,66,Major Delay,5066,72,Major Delay
+11:08:44,4701,36,Major Delay,5397,30,Minor Delay,5914,50,Major Delay
+11:08:49,6254,60,Major Delay,6393,67,Major Delay,4921,90,Major Delay
+11:08:49,4722,52,Major Delay,5408,24,Minor Delay,4813,74,Major Delay
+11:08:54,5411,73,Major Delay,6488,10,On Time,5732,90,Major Delay
+11:08:59,5178,10,On Time,6231,10,On Time,5703,14,Minor Delay
+11:09:04,5947,35,Major Delay,5609,68,Major Delay,5368,40,Major Delay
+11:09:10,5296,10,On Time,5940,13,Minor Delay,6245,24,Minor Delay
+11:09:14,4724,8,On Time,6118,15,Minor Delay,4722,73,Major Delay
+11:09:19,6450,21,Minor Delay,6334,22,Minor Delay,5542,14,Minor Delay
+11:09:24,4305,67,Major Delay,5598,29,Minor Delay,6015,55,Major Delay
+11:09:29,6019,52,Major Delay,4538,85,Major Delay,5212,49,Major Delay
+11:09:34,5613,48,Major Delay,6305,37,Major Delay,5228,15,Minor Delay
+11:09:39,4479,9,On Time,5889,42,Major Delay,5762,88,Major Delay
+11:09:44,4989,55,Major Delay,5861,53,Major Delay,5265,28,Minor Delay
+11:09:49,6426,60,Major Delay,4941,66,Major Delay,6238,58,Major Delay
+11:09:54,5474,44,Major Delay,4385,24,Minor Delay,4812,3,On Time
+11:09:59,4343,75,Major Delay,5159,87,Major Delay,5530,45,Major Delay
+11:10:04,5157,38,Major Delay,5028,51,Major Delay,5011,7,On Time
+11:10:09,5254,31,Major Delay,5942,40,Major Delay,6426,12,Minor Delay
+11:10:57,5998,42,Major Delay,5712,80,Major Delay,4743,7,On Time
+11:10:59,5766,39,Major Delay,5635,83,Major Delay,5401,42,Major Delay
+11:11:04,5384,74,Major Delay,4922,30,Minor Delay,5646,41,Major Delay
+11:11:09,6026,0,On Time,5275,17,Minor Delay,5651,12,Minor Delay
+11:11:14,5674,59,Major Delay,4335,5,On Time,4968,60,Major Delay
+11:11:19,5248,13,Minor Delay,5385,70,Major Delay,5408,59,Major Delay
+11:11:24,4449,4,On Time,5627,33,Major Delay,4536,16,Minor Delay
+11:11:29,5538,82,Major Delay,5767,50,Major Delay,6083,73,Major Delay
+11:12:25,5124,41,0.46,5502,26,0.29,4532,78,0.87
+11:12:32,5381,0,0.0,5613,56,0.62,5940,36,0.4
+11:12:33,4945,64,0.71,5993,2,0.02,6101,81,0.9
+11:12:34,4692,33,0.37,6004,20,0.22,5345,54,0.6
+11:12:56,4855,38,0.42,6317,35,0.39,4408,82,0.91
+11:12:57,4859,74,0.82,5257,41,0.46,5232,39,0.43
+11:13:01,4752,75,0.83,5785,24,0.27,5018,51,0.57
+11:13:05,5018,44,0.49,6058,18,0.2,5558,78,0.87
+11:13:10,5313,80,0.89,5205,0,0.0,4818,73,0.81
+11:13:16,6133,3,0.03,6449,34,0.38,4995,55,0.61
+11:13:20,4970,57,0.63,4400,0,0.0,5946,57,0.63
+11:13:25,5174,13,0.14,6151,21,0.23,5356,32,0.36
+11:13:30,5468,79,0.88,5547,30,0.33,6093,19,0.21
+11:13:35,6302,64,0.71,6372,79,0.88,5964,1,0.01
+11:13:41,4736,18,0.2,4733,24,0.27,4376,48,0.53
+11:13:46,5757,30,0.33,5030,65,0.72,5088,44,0.49
+11:13:51,6407,72,0.8,6406,44,0.49,5288,49,0.54
+11:13:56,4528,74,0.82,4705,42,0.47,6365,63,0.7
+11:14:01,5723,57,0.63,6429,47,0.52,6189,25,0.28
+11:14:06,6239,63,0.7,5578,72,0.8,4735,37,0.41
+11:14:11,5333,71,0.79,4899,25,0.28,4561,38,0.42
+11:14:16,5639,68,0.76,5728,47,0.52,5255,78,0.87
+11:14:21,4457,55,0.61,4452,33,0.37,5551,90,1.0
+11:14:26,5349,59,0.66,5539,48,0.53,4355,55,0.61
+11:14:31,6058,24,0.27,5825,23,0.26,4849,22,0.24
+11:14:36,6385,22,0.24,5346,46,0.51,5877,47,0.52
+11:14:53,5668,76,0.84,5074,8,0.09,4375,27,0.3
+11:14:57,4536,69,0.77,5172,49,0.54,5226,22,0.24
+11:15:01,4739,55,0.61,4870,37,0.41,6444,59,0.66
+11:15:06,6487,55,0.61,4822,28,0.31,5805,57,0.63
+11:15:10,5845,1,0.01,5354,50,0.56,5418,14,0.16
+11:15:16,4849,56,0.62,6015,75,0.83,4357,43,0.48
+11:15:21,6094,24,0.27,5963,33,0.37,4916,23,0.26
+11:15:26,4532,62,0.69,5007,56,0.62,4890,75,0.83
+11:15:30,5254,61,0.68,5925,9,0.1,6128,77,0.86
+11:15:36,5840,11,0.12,6096,79,0.88,5523,20,0.22
+11:15:41,5196,18,0.2,5214,51,0.57,5844,32,0.36
+11:15:46,4897,85,0.94,4852,23,0.26,5609,12,0.13
+11:15:51,5590,85,0.94,4709,7,0.08,4364,71,0.79
+11:15:56,5046,37,0.41,5833,17,0.19,4351,88,0.98
+11:16:01,4951,35,0.39,4404,60,0.67,5251,64,0.71
+11:16:06,5713,68,0.76,5303,30,0.33,5652,52,0.58
+11:16:11,4397,90,1.0,5412,78,0.87,5663,36,0.4
+11:16:16,6200,54,0.6,4382,56,0.62,5312,23,0.26
+11:16:21,4745,85,0.94,4356,84,0.93,4353,19,0.21
+11:16:26,5394,5,0.06,4340,11,0.12,5187,87,0.97
+11:16:31,4983,44,0.49,4387,40,0.44,5884,58,0.64
+11:17:01,6423,16,0.18,6097,86,0.96,5580,85,0.94
+11:17:29,4528,39,0.43,5539,0,0.0,4682,89,0.99
+11:17:35,4541,84,0.93,4765,73,0.81,5556,9,0.1
+11:17:37,5145,62,0.69,4476,51,0.57,4829,23,0.26
+11:17:41,4924,88,0.98,4691,48,0.53,5348,39,0.43
+11:17:46,5119,87,0.97,5794,66,0.73,6157,83,0.92
+11:17:50,4585,68,0.76,4940,62,0.69,4641,0,0.0
+11:17:56,5209,16,0.18,6221,42,0.47,4481,62,0.69
+11:18:01,4552,62,0.69,6258,50,0.56,4987,40,0.44

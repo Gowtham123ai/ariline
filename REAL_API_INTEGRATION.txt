@@ -1,0 +1,18 @@
+
+REAL AIRLINE API INTEGRATION
+
+Recommended APIs:
+1. AviationStack
+2. Amadeus for Developers
+3. FlightAware
+4. OpenSky Network
+
+Example (AviationStack):
+- Sign up
+- Get API Key
+- Use /flights endpoint
+
+Benefits:
+- Real flight status
+- Actual delays
+- Airport-level accuracy
