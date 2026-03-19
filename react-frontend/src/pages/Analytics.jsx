@@ -20,7 +20,7 @@ function Analytics({ currency = "INR" }) {
   const formatPrice = (p) => symbol[currency] + (p * rates[currency]).toLocaleString(undefined, { maximumFractionDigits: 0 })
 
   useEffect(() => {
-    axios.get("http://localhost:10000/api/forecast")
+    axios.get("/api/forecast")
       .then(res => {
         if (!res.data || !res.data.data) {
           setStats({ prediction_text: "Prediction Data Unavailable", confidence: "0%" });

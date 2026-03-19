@@ -14,7 +14,7 @@ function SavedRoutes({ currency = "INR" }) {
 
   const fetchRoutes = async () => {
     try {
-      const response = await axios.get("http://localhost:10000/api/my-routes")
+      const response = await axios.get("/api/my-routes")
       // Initialize trend data for the frontend simulation
       const enriched = response.data.map((r, i) => ({
         ...r,

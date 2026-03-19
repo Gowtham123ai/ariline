@@ -4,7 +4,7 @@ import axios from "axios"
 import { airports } from "../airports"
 import { Card, Typography, Modal, Box, CircularProgress, Tooltip } from "@mui/material"
 
-const socket = io("http://localhost:10000")
+const socket = io("")
 
 function Dashboard({ currency = "INR" }) {
   const [livePrice, setLivePrice] = useState(null)
@@ -37,13 +37,13 @@ function Dashboard({ currency = "INR" }) {
     setIntelligence(null)
     try {
       // 1. Fetch Flights
-      const flRes = await axios.get(`http://localhost:10000/api/flights`, {
+      const flRes = await axios.get(`/api/flights`, {
         params: { origin, destination }
       })
       setFlights(flRes.data)
       
       // 2. Fetch AI Intelligence
-      const intelRes = await axios.get(`http://localhost:10000/api/route-intelligence`, {
+      const intelRes = await axios.get(`/api/route-intelligence`, {
         params: { origin, destination }
       })
       setIntelligence(intelRes.data)
@@ -58,7 +58,7 @@ function Dashboard({ currency = "INR" }) {
 
   const trackRoute = async (flight) => {
     try {
-      await axios.post('http://localhost:10000/api/save-route', {
+      await axios.post('/api/save-route', {
         origin,
         destination,
         price: flight.price

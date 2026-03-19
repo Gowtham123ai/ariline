@@ -22,7 +22,7 @@ function App() {
     setChatLog([...chatLog, userMsg])
     setChatMsg("")
     try {
-      const res = await axios.post("http://localhost:10000/api/chat", { message: chatMsg })
+      const res = await axios.post("/api/chat", { message: chatMsg })
       setChatLog(prev => [...prev, { role: "bot", text: res.data.response }])
     } catch (err) {
       setChatLog(prev => [...prev, { role: "bot", text: "Something went wrong. Is the backend running?" }])
