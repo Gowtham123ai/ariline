@@ -266,6 +266,10 @@ def handle_subscribe(data):
         adults=1
     )
 
+    if not response.data:
+        print(f"No flight offer found for {origin} to {destination}")
+        return
+
     offer = response.data[0]
     raw_price = float(offer["price"]["total"])
     currency = offer["price"]["currency"]

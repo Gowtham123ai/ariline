@@ -124,7 +124,7 @@ function SavedRoutes({ currency = "INR" }) {
                     </td>
                     <td style={{ fontWeight: 700 }}>{route.origin}</td>
                     <td style={{ fontWeight: 700 }}>{route.destination}</td>
-                    <td style={{ fontSize: "16px", fontWeight: 600 }}>₹{route.price}</td>
+                    <td style={{ fontSize: "16px", fontWeight: 600 }}>{formatPrice(route.price)}</td>
                     <td>
                       {route.trend === "up" && <span style={{ color: "var(--danger)", background: "rgba(239, 68, 68, 0.1)", padding: "4px 8px", borderRadius: "6px" }}>↑ Rising</span>}
                       {route.trend === "down" && <span style={{ color: "var(--accent)", background: "rgba(16, 185, 129, 0.1)", padding: "4px 8px", borderRadius: "6px" }}>↓ Falling</span>}
