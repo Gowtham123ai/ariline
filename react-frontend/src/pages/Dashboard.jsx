@@ -36,7 +36,10 @@ function Dashboard({ currency = "INR" }) {
     setFlights([])
     setIntelligence(null)
     try {
-      // Ensure we always have an array for flights to prevent .map() crashes
+      // 1. Fetch real-time flights (Uses Master-Fix Console API)
+      const flRes = await axios.get(`/api/flights`, {
+        params: { origin, destination }
+      });
       const flightData = Array.isArray(flRes.data) ? flRes.data : [];
       setFlights(flightData);
       console.log("Flight Search Results:", flightData);
