@@ -50,7 +50,8 @@ function Dashboard({ currency = "INR" }) {
       setOpen(true)
     } catch (err) {
       console.error("Flight search failed", err)
-      alert("Flight search failed. Please ensure the backend is running or try again later.")
+      const errorDetail = err.response?.data?.error || err.message;
+      alert(`Flight search failed: ${errorDetail}`);
     } finally {
       setLoading(false)
     }
