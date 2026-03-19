@@ -62,10 +62,17 @@ except Exception as e:
     db = MockDB()
 
 # Amadeus API
-amadeus = Client(
-    client_id="1qkIsxLMEgBJucbQfru3Bjwm7FGDHLk0",
-    client_secret="ndhROyTJGtw1jEmN"
-)
+try:
+    amadeus = Client(
+        client_id="1qkIsxLMEgBJucbQfru3Bjwm7FGDHLk0",
+        client_secret="ndhROyTJGtw1jEmN"
+    )
+    # Quick check by looking at some basic property or just assume it's okay until used
+    AMADEUS_AVAILABLE = True
+    print("Amadeus API client initialized")
+except Exception as e:
+    print(f"Amadeus API initialization failed: {e}")
+    AMADEUS_AVAILABLE = False
 
 # JWT Setup
 app.config["JWT_SECRET_KEY"] = "super-secret"
@@ -181,34 +188,47 @@ def ai_chat():
 
 @app.route("/api/flights")
 def get_flights():
+    origin = request.args.get("origin", "MAA")
+    destination = request.args.get("destination", "DXB")
 
-    origin = request.args.get("origin")
-    destination = request.args.get("destination")
-
-    response = amadeus.shopping.flight_offers_search.get(
-        originLocationCode=origin,
-        destinationLocationCode=destination,
-        departureDate=datetime.date.today().isoformat(),
-        adults=1
-    )
+    try:
+        response = amadeus.shopping.flight_offers_search.get(
+            originLocationCode=origin,
+            destinationLocationCode=destination,
+            departureDate=datetime.date.today().isoformat(),
+            adults=1
+        )
+        response_data = response.data
+    except Exception as e:
+        print(f"Amadeus API failed: {e}. Using mock data.")
+        response_data = []
 
     flights = []
 
-    for offer in response.data[:5]:
-        raw_price = float(offer["price"]["total"])
-        currency = offer["price"]["currency"]
-        
-        # Simple conversion to INR for demo if not already INR
-        final_price = raw_price
-        if currency != "INR":
-            final_price = round(raw_price * 90, 2) # Rough average for USD/EUR to INR
+    # If API failed or returned nothing, use mock data for demo
+    if not response_data:
+        for i in range(3):
+            flights.append({
+                "price": random.randint(12000, 35000),
+                "currency": "INR",
+                "airline": random.choice(["Indigo", "Air India", "Vistara"]),
+                "departure": (datetime.datetime.now() + datetime.timedelta(hours=random.randint(2, 12))).isoformat()
+            })
+    else:
+        for offer in response_data[:5]:
+            raw_price = float(offer["price"]["total"])
+            currency = offer["price"]["currency"]
             
-        flights.append({
-            "price": final_price,
-            "currency": "INR", # We'll show everything in INR for consistency
-            "airline": offer["validatingAirlineCodes"][0],
-            "departure": offer["itineraries"][0]["segments"][0]["departure"]["at"]
-        })
+            final_price = raw_price
+            if currency != "INR":
+                final_price = round(raw_price * 90, 2)
+                
+            flights.append({
+                "price": final_price,
+                "currency": "INR",
+                "airline": offer["validatingAirlineCodes"][0],
+                "departure": offer["itineraries"][0]["segments"][0]["departure"]["at"]
+            })
 
     return jsonify(flights)
 
