@@ -264,11 +264,17 @@ def save_route():
     })
     return jsonify({"msg": "Route saved"})
 
-@app.route("/api/my-routes")
-def my_routes():
-    user_email = request.args.get("user_email", "admin@airline.ai")
-    routes = list(db.routes.find({"user": user_email}, {"_id":0}))
-    return jsonify(routes)
+@app.route("/api/market-pulse")
+def market_pulse():
+    weather_conditions = ["Clear Skies", "Light Clouds", "Scattered Showers", "Overcast", "Hazy", "Slight Fog"]
+    return jsonify({
+        "price": random.randint(22000, 32000),
+        "delay": random.randint(5, 40),
+        "weather": {
+            "status": random.choice(weather_conditions),
+            "temp": f"{random.randint(15, 38)}°C"
+        }
+    })
 
 # Vercel requirement: Export the app object
 # No socketio.run() here as Vercel handles the server

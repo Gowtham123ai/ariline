@@ -4,7 +4,11 @@ import axios from "axios"
 import { airports } from "../airports"
 import { Card, Typography, Modal, Box, CircularProgress, Tooltip, Divider } from "@mui/material"
 
-const socket = io("http://localhost:5001")
+const SOCKET_URL = window.location.hostname === "localhost" ? "http://localhost:5001" : window.location.origin
+const socket = io(SOCKET_URL, {
+  transports: ["websocket", "polling"],
+  reconnectionAttempts: 5
+})
 
 function Dashboard({ currency = "INR" }) {
   const [livePrice, setLivePrice] = useState(null)
@@ -51,8 +55,26 @@ function Dashboard({ currency = "INR" }) {
       if (data.delay) setMarketDelay(data.delay)
       if (data.weather) setMarketWeather(data.weather)
     })
-    return () => socket.off("live_price")
-  }, [])
+
+    // Fallback Polling for Vercel (where Socket.io might not work)
+    const fallbackPoll = setInterval(async () => {
+      if (!livePrice || marketWeather.status === "Analyzing Skies...") {
+        try {
+          const res = await axios.get("/api/market-pulse");
+          setLivePrice(res.data.price);
+          setMarketDelay(res.data.delay);
+          setMarketWeather(res.data.weather);
+        } catch (e) {
+          console.log("Polling failed, normal for local if backend down");
+        }
+      }
+    }, 5000);
+
+    return () => {
+      socket.off("live_price")
+      clearInterval(fallbackPoll)
+    }
+  }, [livePrice, marketWeather.status])
 
   const searchFlights = async () => {
     setLoading(true)
