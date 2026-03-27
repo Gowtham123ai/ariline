@@ -1,4 +1,4 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, AreaChart, Area, ScatterChart, Scatter, ZAxis, ComposedChart } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar, AreaChart, Area, ScatterChart, Scatter, ZAxis, ComposedChart, Cell } from 'recharts';
 import { useEffect, useState } from "react"
 import axios from "axios"
 import { Typography, Box, Paper, Grid, Divider } from "@mui/material"
@@ -53,7 +53,7 @@ function Analytics({ currency = "INR" }) {
               </span>
             </div>
           ))}
-          {label.includes("Airlines") || delayData.find(d => d.name === label) && (
+          {(typeof label === 'string' && (label.includes("Airlines") || delayData.find(d => d.name === label))) && (
              <p style={{ fontSize: '11px', color: '#94a3b8', marginTop: '10px', fontStyle: 'italic' }}>
                * Primarily driven by Weather & Traffic patterns.
              </p>
@@ -168,7 +168,7 @@ function Analytics({ currency = "INR" }) {
                   <Tooltip cursor={{ strokeDasharray: '3 3' }} content={<ChartTooltip />} />
                   <Scatter name="Airlines" data={delayData} fill="#6366f1">
                     {delayData.map((entry, index) => (
-                      <cell key={`cell-${index}`} fill={entry.riskScore > 60 ? '#f43f5e' : entry.riskScore < 30 ? '#10b981' : '#6366f1'} />
+                      <Cell key={`cell-${index}`} fill={entry.riskScore > 60 ? '#f43f5e' : entry.riskScore < 30 ? '#10b981' : '#6366f1'} />
                     ))}
                   </Scatter>
                 </ScatterChart>
