@@ -7,6 +7,7 @@ import os
 import random
 import bcrypt
 import smtplib
+import traceback
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt
@@ -328,10 +329,10 @@ def email_alert():
     
     # Real Email Configuration
     SENDER_EMAIL = "srimonika54@gmail.com"
-    SENDER_PASS = "edtj sfaf fmsb pccp" # App Password
+    SENDER_PASS = "edtjsfaffmsbpccp" # App Password (spaces removed)
     
     msg = MIMEMultipart()
-    msg['From'] = f"Airline Intelligence Core <{SENDER_EMAIL}>"
+    msg['From'] = f"Airline AI Intelligence <{SENDER_EMAIL}>"
     msg['To'] = user_email
     msg['Subject'] = "✈️ Price Drop Surveillance Activated"
     
@@ -351,23 +352,24 @@ def email_alert():
     msg.attach(MIMEText(body, 'plain'))
     
     try:
-        # Connect to Gmail SMTP
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.starttls()
+        # Use SMTP_SSL for better reliability on port 465
+        print(f"DEBUG: Attempting to send email to {user_email}...")
+        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.login(SENDER_EMAIL, SENDER_PASS)
         server.send_message(msg)
         server.quit()
         
-        print(f"📧 EMAIL DISPATCHED TO: {user_email}")
+        print(f"📧 SUCCESS: EMAIL DISPATCHED TO: {user_email}")
         return jsonify({
             "status": "success",
-            "msg": f"AI Alert: Price drop surveillance active for {user_email}. Check your inbox for confirmation!"
+            "msg": f"AI Alert: Price drop surveillance active for {user_email}. Check your inbox!"
         })
     except Exception as e:
-        print(f"❌ EMAIL FAILED: {e}")
+        print(f"❌ SMTP ERROR: {str(e)}")
+        traceback.print_exc()
         return jsonify({
             "status": "error",
-            "msg": f"Failed to send email: {str(e)}"
+            "msg": f"AI Engine Error: {str(e)}"
         }), 500
 
 # -----------------------------
