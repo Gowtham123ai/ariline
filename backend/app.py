@@ -6,10 +6,8 @@ from datetime import datetime, timedelta
 import os
 import random
 import bcrypt
-import smtplib
+import requests
 import traceback
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt
 import eventlet
 from amadeus import Client
@@ -327,45 +325,58 @@ def email_alert():
     origin = request.json.get("origin", "MAA")
     destination = request.json.get("destination", "DXB")
     
-    # Real Email Configuration
+    # --- SENDGRID API SENDER ---
+    # To work on Vercel, replace the string below with your real SendGrid API Key!
+    SENDGRID_API_KEY = "SG.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" # <--- ADD KEY HERE
     SENDER_EMAIL = "srimonika54@gmail.com"
-    SENDER_PASS = "edtjsfaffmsbpccp" # App Password (spaces removed)
     
-    msg = MIMEMultipart()
-    msg['From'] = f"Airline AI Intelligence <{SENDER_EMAIL}>"
-    msg['To'] = user_email
-    msg['Subject'] = "✈️ Price Drop Surveillance Activated"
+    data = {
+        "personalizations": [{
+            "to": [{"email": user_email}],
+            "subject": "✈️ Price Drop Surveillance Activated"
+        }],
+        "from": {"email": SENDER_EMAIL, "name": "Airline Intelligence Core"},
+        "content": [{
+            "type": "text/plain",
+            "value": f"""
+Hello Travel Enthusiast,
+
+Our Multi-Agent AI system has successfully established a 24/7 watch on your selected route: {origin} -> {destination}.
+
+We will notify you immediately if our Prophet & LSTM models detect a significant price pivot.
+
+Surveillance ID: {random.randint(100000, 999999)}
+Status: SCANNING MARKET PULSE...
+
+Best Regards,
+Airline Intelligence Core
+            """
+        }]
+    }
     
-    body = f"""
-    Hello Travel Enthusiast,
-    
-    Our Multi-Agent AI system has successfully established a 24/7 watch on your selected route: {origin} -> {destination}.
-    
-    We will notify you immediately if our Prophet & LSTM models detect a significant price pivot.
-    
-    Surveillance ID: {random.randint(100000, 999999)}
-    Status: SCANNING MARKET PULSE...
-    
-    Best Regards,
-    Airline Intelligence Core
-    """
-    msg.attach(MIMEText(body, 'plain'))
+    headers = {
+        "Authorization": f"Bearer {SENDGRID_API_KEY}",
+        "Content-Type": "application/json"
+    }
     
     try:
-        # Use SMTP_SSL for better reliability on port 465
-        print(f"DEBUG: Attempting to send email to {user_email}...")
-        server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-        server.login(SENDER_EMAIL, SENDER_PASS)
-        server.send_message(msg)
-        server.quit()
+        print(f"DEBUG: Attempting to send email via SendGrid API to {user_email}...")
+        response = requests.post("https://api.sendgrid.com/v3/mail/send", json=data, headers=headers)
         
-        print(f"📧 SUCCESS: EMAIL DISPATCHED TO: {user_email}")
-        return jsonify({
-            "status": "success",
-            "msg": f"AI Alert: Price drop surveillance active for {user_email}. Check your inbox!"
-        })
+        if response.status_code == 202:
+            print(f"📧 SUCCESS: EMAIL DISPATCHED TO: {user_email} (SendGrid API)")
+            return jsonify({
+                "status": "success",
+                "msg": f"AI Alert: Price drop surveillance active. Check your inbox!"
+            })
+        else:
+            print(f"❌ SENDGRID ERROR: {response.text}")
+            return jsonify({
+                "status": "error",
+                "msg": f"SendGrid API Error: {response.status_code} - {response.text}"
+            }), 500
     except Exception as e:
-        print(f"❌ SMTP ERROR: {str(e)}")
+        print(f"❌ SYSTEM ERROR: {str(e)}")
         traceback.print_exc()
         return jsonify({
             "status": "error",
