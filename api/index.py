@@ -28,10 +28,14 @@ except Exception as e:
     MONGO_AVAILABLE = False
     class MockCollection:
         def __init__(self): self.data = []
-        def find(self, query, projection=None): return self.data
-        def find_one(self, query): return None
+        def find(self, query, projection=None): 
+            if not query: return self.data
+            return [d for d in self.data if all(d.get(k) == v for k, v in query.items())]
+        def find_one(self, query): 
+            res = self.find(query)
+            return res[0] if res else None
         def insert_one(self, doc): self.data.append(doc)
-        def count_documents(self, query): return len(self.data)
+        def count_documents(self, query): return len(self.find(query))
     
     class MockDB:
         def __init__(self):
@@ -62,6 +66,18 @@ def register():
     hashed = bcrypt.hashpw(data["password"].encode("utf-8"), bcrypt.gensalt()).decode("utf-8")
     db.users.insert_one({"email": data["email"], "password": hashed, "role": "admin" if data.get("admin") else "user"})
     return jsonify({"msg": "Registered successfully"})
+
+@app.route("/api/admin/stats")
+@jwt_required()
+def admin_stats():
+    claims = get_jwt()
+    if claims.get("role") != "admin":
+        return jsonify({"msg": "Admins only"}), 403
+
+    return jsonify({
+        "total_users": db.users.count_documents({}),
+        "total_searches": db.routes.count_documents({})
+    })
 
 @app.route('/api/login', methods=['POST'])
 def login():
@@ -263,6 +279,12 @@ def save_route():
         "timestamp": datetime.datetime.now()
     })
     return jsonify({"msg": "Route saved"})
+
+@app.route("/api/my-routes")
+def my_routes():
+    user_email = request.args.get("user_email", "admin@airline.ai")
+    routes = list(db.routes.find({"user": user_email}, {"_id":0}))
+    return jsonify(routes)
 
 @app.route("/api/market-pulse")
 def market_pulse():

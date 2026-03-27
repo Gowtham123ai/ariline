@@ -400,18 +400,17 @@ def send_live_price():
         })
         socketio.sleep(10) 
 
-@socketio.on("subscribe")
-def handle_subscribe(data):
-    # Mock update for subscription
-    socketio.emit("flight_update", {
-        "price": random.randint(15000, 30000),
-        "currency": "INR",
-        "airline": "Vistara"
+@app.route("/api/market-pulse")
+def market_pulse():
+    weather_conditions = ["Clear Skies", "Light Clouds", "Scattered Showers", "Overcast", "Hazy", "Slight Fog"]
+    return jsonify({
+        "price": random.randint(22000, 32000),
+        "delay": random.randint(5, 40),
+        "weather": {
+            "status": random.choice(weather_conditions),
+            "temp": f"{random.randint(15, 38)}°C"
+        }
     })
-
-# -----------------------------
-# MAIN
-# -----------------------------
 
 if __name__ == "__main__":
     socketio.start_background_task(send_live_price)
