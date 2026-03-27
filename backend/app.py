@@ -6,6 +6,9 @@ from datetime import datetime, timedelta
 import os
 import random
 import bcrypt
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt
 import eventlet
 from amadeus import Client
@@ -320,26 +323,52 @@ def book_ticket():
 @app.route("/api/email-alert", methods=["POST"])
 def email_alert():
     user_email = request.json.get("email", "admin@airline.ai")
+    origin = request.json.get("origin", "MAA")
+    destination = request.json.get("destination", "DXB")
     
-    # Simulate a real email dispatch sequence
-    print(f"\n" + "="*50)
-    print(f"🚀 AI DISPATCH: OUTGOING EMAIL ALERT")
-    print(f"TO: {user_email}")
-    print(f"SUBJECT: ✈️ Price Drop Surveillance Activated")
-    print("-" * 50)
-    print(f"Hello Travel Enthusiast,\n\n"
-          f"Our Multi-Agent AI system has successfully established a 24/7 watch on your selected routes.\n"
-          f"We will notify you immediately if our Prophet & LSTM models detect a significant price pivot.\n\n"
-          f"Surveillance ID: {random.randint(100000, 999999)}\n"
-          f"Status: SCANNING MARKET PULSE...\n\n"
-          f"Best Regards,\n"
-          f"Airline Intelligence Core")
-    print("="*50 + "\n")
+    # Real Email Configuration
+    SENDER_EMAIL = "srimonika54@gmail.com"
+    SENDER_PASS = "edtj sfaf fmsb pccp" # App Password
     
-    return jsonify({
-        "status": "success",
-        "msg": f"AI Alert: Price drop surveillance active for {user_email}. Check server logs for dispatch proof!"
-    })
+    msg = MIMEMultipart()
+    msg['From'] = f"Airline Intelligence Core <{SENDER_EMAIL}>"
+    msg['To'] = user_email
+    msg['Subject'] = "✈️ Price Drop Surveillance Activated"
+    
+    body = f"""
+    Hello Travel Enthusiast,
+    
+    Our Multi-Agent AI system has successfully established a 24/7 watch on your selected route: {origin} -> {destination}.
+    
+    We will notify you immediately if our Prophet & LSTM models detect a significant price pivot.
+    
+    Surveillance ID: {random.randint(100000, 999999)}
+    Status: SCANNING MARKET PULSE...
+    
+    Best Regards,
+    Airline Intelligence Core
+    """
+    msg.attach(MIMEText(body, 'plain'))
+    
+    try:
+        # Connect to Gmail SMTP
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(SENDER_EMAIL, SENDER_PASS)
+        server.send_message(msg)
+        server.quit()
+        
+        print(f"📧 EMAIL DISPATCHED TO: {user_email}")
+        return jsonify({
+            "status": "success",
+            "msg": f"AI Alert: Price drop surveillance active for {user_email}. Check your inbox for confirmation!"
+        })
+    except Exception as e:
+        print(f"❌ EMAIL FAILED: {e}")
+        return jsonify({
+            "status": "error",
+            "msg": f"Failed to send email: {str(e)}"
+        }), 500
 
 # -----------------------------
 # PERSONALIZED DASHBOARD
